@@ -1,0 +1,114 @@
+VSIMSA: Configuration file changed: `/home/runner/library.cfg'
+ALIB: Library "work" attached.
+work = /home/runner/work/work.lib
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE "Pass 2. Processing instantiations."
+MESSAGE "Pass 3. Processing behavioral statements."
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE "Unit top modules: tb."
+MESSAGE "$root top modules: tb."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+ALOG: Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+done
+# Aldec, Inc. Riviera-PRO version 2022.04.117.8517 built for Linux64 on May 04, 2022.
+# HDL, SystemC, and Assertions simulator, debugger, and design environment.
+# (c) 1999-2022 Aldec, Inc. All rights reserved.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.0 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 0 primitives and 5 (71.43%) other processes in SLP
+# SLP: 6 (1.62%) signals in SLP and 22 (5.93%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5597 kB (elbread=459 elab2=4972 kernel=165 sdf=0)
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# KERNEL: [DRV] : DUT Reset Done
+# KERNEL: ------------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 1
+# KERNEL: [DRV] : DATA WRITE  data : 2
+# KERNEL: [MON] : Wr:1 rd:0 din:2 dout:0 full:0 empty:1
+# KERNEL: [SCO] : Wr:1 rd:0 din:2 dout:0 full:0 empty:1
+# KERNEL: [SCO] : DATA STORED IN QUEUE :2
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 2
+# KERNEL: [DRV] : DATA WRITE  data : 7
+# KERNEL: [MON] : Wr:1 rd:0 din:7 dout:0 full:0 empty:0
+# KERNEL: [SCO] : Wr:1 rd:0 din:7 dout:0 full:0 empty:0
+# KERNEL: [SCO] : DATA STORED IN QUEUE :7
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 3
+# KERNEL: [DRV] : DATA WRITE  data : 9
+# KERNEL: [MON] : Wr:1 rd:0 din:9 dout:0 full:0 empty:0
+# KERNEL: [SCO] : Wr:1 rd:0 din:9 dout:0 full:0 empty:0
+# KERNEL: [SCO] : DATA STORED IN QUEUE :9
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 4
+# KERNEL: [DRV] : DATA WRITE  data : 7
+# KERNEL: [MON] : Wr:1 rd:0 din:7 dout:0 full:0 empty:0
+# KERNEL: [SCO] : Wr:1 rd:0 din:7 dout:0 full:0 empty:0
+# KERNEL: [SCO] : DATA STORED IN QUEUE :7
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 5
+# KERNEL: [DRV] : DATA WRITE  data : 2
+# KERNEL: [MON] : Wr:1 rd:0 din:2 dout:0 full:0 empty:0
+# KERNEL: [SCO] : Wr:1 rd:0 din:2 dout:0 full:0 empty:0
+# KERNEL: [SCO] : DATA STORED IN QUEUE :2
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 0 iteration : 6
+# KERNEL: [DRV] : DATA READ
+# KERNEL: [MON] : Wr:0 rd:1 din:2 dout:2 full:0 empty:0
+# KERNEL: [SCO] : Wr:0 rd:1 din:2 dout:2 full:0 empty:0
+# KERNEL: [SCO] : DATA MATCH
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 0 iteration : 7
+# KERNEL: [DRV] : DATA READ
+# KERNEL: [MON] : Wr:0 rd:1 din:2 dout:7 full:0 empty:0
+# KERNEL: [SCO] : Wr:0 rd:1 din:2 dout:7 full:0 empty:0
+# KERNEL: [SCO] : DATA MATCH
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 0 iteration : 8
+# KERNEL: [DRV] : DATA READ
+# KERNEL: [MON] : Wr:0 rd:1 din:2 dout:9 full:0 empty:0
+# KERNEL: [SCO] : Wr:0 rd:1 din:2 dout:9 full:0 empty:0
+# KERNEL: [SCO] : DATA MATCH
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 1 iteration : 9
+# KERNEL: [DRV] : DATA WRITE  data : 10
+# KERNEL: [MON] : Wr:1 rd:0 din:10 dout:9 full:0 empty:0
+# KERNEL: [SCO] : Wr:1 rd:0 din:10 dout:9 full:0 empty:0
+# KERNEL: [SCO] : DATA STORED IN QUEUE :10
+# KERNEL: --------------------------------------
+# KERNEL: [GEN] : Oper : 0 iteration : 10
+# KERNEL: [DRV] : DATA READ
+# KERNEL: [MON] : Wr:0 rd:1 din:10 dout:7 full:0 empty:0
+# KERNEL: [SCO] : Wr:0 rd:1 din:10 dout:7 full:0 empty:0
+# KERNEL: [SCO] : DATA MATCH
+# KERNEL: --------------------------------------
+# KERNEL: ---------------------------------------------
+# KERNEL: Error Count :0
+# KERNEL: ---------------------------------------------
+# RUNTIME: Info: RUNTIME_0068 testbench.sv (239): $finish called.
+# KERNEL: Time: 690 ns,  Iteration: 1,  Instance: /tb,  Process: @INITIAL#264_2@.
+# KERNEL: stopped at time: 690 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.
+Finding VCD file...
+./dump.vcd
