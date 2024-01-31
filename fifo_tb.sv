@@ -1,13 +1,13 @@
 class transaction;
   
-  rand bit oper;          // Randomized bit for operation control (1 or 0)
-  bit rd, wr;             // Read and write control bits
-  bit [7:0] data_in;      // 8-bit data input
-  bit full, empty;        // Flags for full and empty status
-  bit [7:0] data_out;     // 8-bit data output
+  rand bit oper;          
+  bit rd, wr;             
+  bit [7:0] data_in;      
+  bit full, empty;        
+  bit [7:0] data_out;     
   
   constraint oper_ctrl {  
-    oper dist {1 :/ 50 , 0 :/ 50};  // Constraint to randomize 'oper' with 50% probability of 1 and 50% probability of 0
+    oper dist {1 :/ 50 , 0 :/ 50};  
   }
   
 endclass
@@ -16,13 +16,13 @@ endclass
  
 class generator;
   
-  transaction tr;           // Transaction object to generate and send
-  mailbox #(transaction) mbx;  // Mailbox for communication
-  int count = 0;            // Number of transactions to generate
-  int i = 0;                // Iteration counter
+  transaction tr;           
+  mailbox #(transaction) mbx;  
+  int count = 0;           
+  int i = 0;               
   
-  event next;               // Event to signal when to send the next transaction
-  event done;               // Event to convey completion of requested number of transactions
+  event next;               
+  event done;               
    
   function new(mailbox #(transaction) mbx);
     this.mbx = mbx;
@@ -44,9 +44,9 @@ endclass
  
 class driver;
   
-  virtual fifo_if fif;     // Virtual interface to the FIFO
-  mailbox #(transaction) mbx;  // Mailbox for communication
-  transaction datac;       // Transaction object for communication
+  virtual fifo_if fif;    
+  mailbox #(transaction) mbx;  
+  transaction datac;      
  
   function new(mailbox #(transaction) mbx);
     this.mbx = mbx;
@@ -105,9 +105,9 @@ endclass
  
 class monitor;
  
-  virtual fifo_if fif;     // Virtual interface to the FIFO
-  mailbox #(transaction) mbx;  // Mailbox for communication
-  transaction tr;          // Transaction object for monitoring
+  virtual fifo_if fif;     
+  mailbox #(transaction) mbx;  
+  transaction tr;         
   
   function new(mailbox #(transaction) mbx);
     this.mbx = mbx;     
@@ -138,13 +138,12 @@ endclass
  
 class scoreboard;
   
-  mailbox #(transaction) mbx;  // Mailbox for communication
-  transaction tr;          // Transaction object for monitoring
+  mailbox #(transaction) mbx;  
+  transaction tr;         
   event next;
-  bit [7:0] din[$];       // Array to store written data
-  bit [7:0] temp;         // Temporary data storage
-  int err = 0;            // Error count
-  
+  bit [7:0] din[$];       
+  bit [7:0] temp;         
+  int err = 0;           
   function new(mailbox #(transaction) mbx);
     this.mbx = mbx;     
   endfunction;
